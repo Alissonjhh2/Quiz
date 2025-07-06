@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#e60023">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <title>Descubra se você está aproveitando todo o potencial do Pinterest!</title>
+    <title>Quiz Pinterest</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -17,7 +17,7 @@
         <header class="header">
             <div class="logo">
                 <i class="fab fa-pinterest"></i>
-                <span>Pinterest Quiz</span>
+                <span id="logoText">Pinterest Quiz</span>
             </div>
         </header>
 
@@ -29,26 +29,26 @@
                     <div class="welcome-icon">
                         <i class="fab fa-pinterest"></i>
                     </div>
-                    <h1 class="main-title">Descubra se você está perdendo tráfego no Pinterest (e como corrigir isso agora)</h1>
-                    <p class="welcome-text">
+                    <h1 class="main-title" id="mainTitle">Descubra se você está perdendo tráfego no Pinterest (e como corrigir isso agora)</h1>
+                    <p class="welcome-text" id="welcomeText">
                         Leva menos de 1 minuto! Responda esse quiz rápido e veja se você está deixando de atrair visitantes grátis para seu site com o Pinterest.
                     </p>
-                    <div class="benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Aumento real de tráfego orgânico</span>
+                                            <div class="benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span id="benefit1">Aumento real de tráfego orgânico</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-search"></i>
+                                <span id="benefit2">SEO otimizado para pins e perfil</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-rocket"></i>
+                                <span id="benefit3">Estratégia profissional de crescimento</span>
+                            </div>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-search"></i>
-                            <span>SEO otimizado para pins e perfil</span>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>Estratégia profissional de crescimento</span>
-                        </div>
-                    </div>
                     <button class="start-btn" onclick="startQuiz()">
-                        <span>Começar Quiz</span>
+                        <span id="startButtonText">Começar Quiz</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -71,18 +71,18 @@
                     <div class="results-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h2 class="results-title">Seu Resultado</h2>
+                    <h2 class="results-title" id="resultsTitle">Seu Resultado</h2>
                     <div class="results-message" id="resultsMessage">
                         <!-- Results will be dynamically loaded here -->
                     </div>
                     <div class="cta-section">
-                        <h3>Pronto para transformar seu Pinterest?</h3>
-                        <p>Analisando suas respostas, parece que seu Pinterest tem um grande potencial não aproveitado.</p>
-                        <p><strong>A boa notícia? Você pode mudar isso agora com a ajuda de um especialista.</strong></p>
+                        <h3 id="ctaTitle">Pronto para transformar seu Pinterest?</h3>
+                        <p id="ctaText1">Analisando suas respostas, parece que seu Pinterest tem um grande potencial não aproveitado.</p>
+                        <p id="ctaText2"><strong>A boa notícia? Você pode mudar isso agora com a ajuda de um especialista.</strong></p>
                         <div class="cta-button-container">
                             <a href="https://br.fiverr.com/seo_with_jabed/be-your-manager-i-do-seo-promotion-pins-and-traffic?context_referrer=search_gigs_with_recommendations_row_1&source=sorting_by&ref_ctx_id=19857e945e5b4e6c83a843058e0f9d29&pckg_id=1&pos=11&ad_key=6645689d-8610-4dfc-9031-1cfdfdc6b76a&context_type=auto&funnel=19857e945e5b4e6c83a843058e0f9d29&imp_id=6e507b45-eda5-41c7-bdca-aef35abd48da" class="cta-button" id="ctaButton">
                                 <i class="fas fa-external-link-alt"></i>
-                                <span>Sim! Quero otimizar meu Pinterest agora</span>
+                                <span id="ctaButtonText">Sim! Quero otimizar meu Pinterest agora</span>
                             </a>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 Pinterest Quiz. Todos os direitos reservados.</p>
+            <p id="footerText">&copy; 2024 Pinterest Quiz. Todos os direitos reservados.</p>
         </footer>
     </div>
 
